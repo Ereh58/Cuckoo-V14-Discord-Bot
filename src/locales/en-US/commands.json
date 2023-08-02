@@ -1,0 +1,571 @@
+{
+    "ping": {
+        "name": "ping",
+        "description": "Sends the ping of the bot and the Discord WS",
+        "embed": {
+            "bot_ping": "Bot Latency",
+            "discord_ping": "Discord Latency"
+        }
+    },
+    "vanity_url": {
+        "name": "url",
+        "description": "Sends a notification to the channel you specify when the URL changes",
+        "status": {
+            "name": "status",
+            "description": "Please choose what status"
+        },
+        "control_channel": {
+            "name": "control-channel",
+            "description": "Set URL notification channel"
+        },
+        "sub_command": "guard",
+        "error_embed": "Please specify a status",
+        "open_embed": "I have successfully installed the url notification system on the channel named <#{{channel}}>",
+        "close_embed": "URL notification system was successfully turned off",
+        "change_url": "Vanity URL Changed",
+        "old_vanity_url": "Old Vanity URL",
+        "new_vanity_url": "New Vanity URL",
+        "staff_vanity_url": "Staff",
+        "not_channel": "Please enter a channel"
+    },
+    "report": {
+        "name": "report",
+        "description": "Allows you to send the error you get to the developer",
+        "image": {
+            "name": "picture",
+            "description": "Please enter an image related to the error"
+        },
+        "report_text": {
+            "name": "error-can-you-tell-me",
+            "description": "What were you doing when you got this error?"
+        },
+        "send_name": "send",
+        "not_picture": "Please select a picture",
+        "send_embed": "I successfully forwarded the error to the developer",
+        "not_report_text": "Please describe the error message"
+    },
+    "welcome": {
+        "name": "welcome",
+        "description": "Allows you to create a welcome message",
+        "channel": {
+            "name": "channel",
+            "description": "Please specify a welcome channel"
+        },
+        "status": {
+            "name": "status",
+            "description": "Please choose what status"
+        },
+        "type": {
+            "name": "type",
+            "descripton": "Please select the greeting type"
+        },
+        "picture": {
+            "name": "image",
+            "description": "Please select an image from your gallery"
+        },
+        "bye_text": {
+            "name": "bye-message",
+            "description": "{user} => User, {memberCount} => Number of members on the server, {bottom} => spacing"
+        },
+        "welcome_text": {
+            "name": "welcome-message",
+            "description": "{user} => User, {memberCount} => Number of members on the server, {bottom} => spacing"
+        },
+        "create_welcome_message": "I installed the welcome system on <#{{-channels}}>",
+        "not_picture": "Please select a picture",
+        "close_welcome": "I successfully turned off the welcome system",
+        "not_type": "Please specify a type",
+        "not_channel": "Please enter a channel",
+        "not_welcome_message": "Please enter a welcome message",
+        "not_bye_message": "Please enter a bye message",
+        "not_png": "Please enter a file ending in .jpg"
+    },
+    "advertising_block": {
+        "name": "advertising",
+        "description": "Blocks users on the server from advertising",
+        "status": {
+            "name": "status",
+            "description": "Please choose what will happen"
+        },
+        "block_name": "block",
+        "open_embed_message": "I have successfully installed the ad blocking system on the server",
+        "close_embed_message": "I successfully removed the adblock system from the server",
+        "block_message": "{user} you should not advertise on this server"
+    },
+    "client_information": {
+        "name": "client",
+        "description": "Shows the bot's information",
+        "information_name": "stats",
+        "embeds": {
+            "bot_owner": "Developer",
+            "bot_owner_value": "{{-owner}}",
+            "bot_uptime": "Uptime",
+            "bot_uptime_value": "{{-uptime}}",
+            "bot_memory_usage": "Memory Usage",
+            "bot_memory_usage_value": "{{-memory}}",
+            "bot_guild_count": "Number of Servers",
+            "bot_guild_count_value": "{{-guild_count}}",
+            "bot_member_count": "Number of users",
+            "bot_member_count_value": "{{-member_count}}",
+            "bot_shard_count": "Number of Shards",
+            "bot_shard_count_value": "{{-shard}}",
+            "bot_command_count": "Number of Commands",
+            "bot_command_count_value": "{{-command}}",
+            "bot_create_date": "Commissioning Date",
+            "bot_create_date_value": "{{-created}}",
+            "bot_version": "Bot Edition",
+            "bot_version_value": "{{-bot_version}}"
+        }
+    },
+    "ticket": {
+        "name": "ticket",
+        "description": "Allows users to create support requests",
+        "status": {
+            "name": "status",
+            "description": "Please choose what will happen"
+        },
+        "channel": {
+            "name": "channel",
+            "description": "Please specify a welcome channel"
+        },
+        "category": {
+            "name": "category",
+            "description": "Specify the category in which the ticket channel will open"
+        },
+        "ticket_count": {
+            "name": "ticket-count",
+            "description": "Specify the maximum number of ticket channels to be opened"
+        },
+        "ticket_moderator": {
+            "name": "moderator",
+            "description": "Enter ticket authority"
+        },
+        "descriptions": {
+            "name": "description",
+            "description": "Enter ticket description"
+        },
+        "create_name": "create",
+        "not_moderator": "Please enter a moderator",
+        "not_channel": "Please enter a channel",
+        "not_ticket_count": "Please enter the maximum number of tickets that can be opened",
+        "not_category": "Please enter a category",
+        "done_embed": "I sent the ticket message to <#{{-channels}}>",
+        "close_embed": "I have successfully removed the ticket system from the server",
+        "not_description": "Please enter a description",
+        "modal_place": "i have some problems",
+        "modal": "What is your problem?",
+        "ticket_name": "_ticket",
+        "ticket_description": "User's Problem",
+        "ticket_create_embed": "I created a support request for you. You can click here to go to the support request you created **{{-channels}}**",
+        "max_ticket_count": "Moderators are currently viewing support requests from other people, please try again later",
+        "channel_delete_message": "Channel is being deleted...",
+        "close_question": "Are you sure you want to close the ticket?",
+        "not_permissions": "You must be a ticket authority to use this",
+        "have_ticket_error_message": "You have an active support request now, you can't open it again",
+        "ticket_opened_user": "👥 **Ticket Creator**",
+        "ticket_opened_time": "⏰ **Ticket Opening Date**",
+        "ticket_opened_moderator": "🎫 **Ticket Authorities**",
+        "user_model": "Enter User ID",
+        "not_user": "Please enter a user",
+        "done_add_user": "I have successfully added the user to the channel"
+    },
+    "welcome_member_count": {
+        "name": "target",
+        "description": "Allows you to set the member counter",
+        "status": {
+            "name": "status",
+            "description": "Please choose what status"
+        },
+        "member": {
+            "name": "member"
+        },
+        "target": {
+            "name": "target-member",
+            "description": "Enter target number of members"
+        },
+        "not_welcome_message": "Please use this command after activating the welcome system",
+        "not_number_options": "Please enter target number of members",
+        "open_system_message": "I have securely installed target member system on server",
+        "close_system_message": "I have successfully removed the target member system from the server",
+        "show_text": "Target: {{-target_member}} • 👥 Number of Members: {{-member_count}} • Remainder: {{-target}}",
+        "not_welcome": "This feature is only available in embed welcome system"
+    },
+    "level_system": {
+        "name": "level",
+        "description": "Allows you to set up the level system on the server",
+        "text": { "name": "level-message", "description": "{user} => user, {level} => User's level" },
+        "channel": { "name": "channel", "description": "Enter channel" },
+        "type": {
+            "name": "type",
+            "description": "Please select level message type"
+        },
+        "role_name": "role",
+        "role_description": "Allows you to enter a role in the level system",
+        "system_name": "system",
+        "role_level": "Level?",
+        "role_role": "Role Id?",
+        "not_text": "Please enter a leveling message",
+        "not_type": "Please specify a type",
+        "not_channel": "Please enter a channel",
+        "not_text_length": "Please enter a 200 character leveling message",
+        "open_embed_message": "I have successfully installed the level system on the server",
+        "close_embed_message": "I removed the level system from the server",
+        "not_1000_length": "Please do not apply role casting above 1000 level",
+        "not_role": "Please enter the role properly and try again",
+        "done_role": "I have successfully added the role you specified"
+    },
+    "level_user": {
+        "name": "user",
+        "description": "Shows user's level",
+        "user": { "name": "user", "description": "Please enter a user" },
+        "user_name": "level",
+        "not_user": "User has no level",
+        "level_level": "Level",
+        "level_xp": "xp"
+    },
+    "premium": {
+        "name": "premium",
+        "description": "Only the owner of the bot can use it",
+        "user": {
+            "name": "user"
+        },
+        "add_name": "add",
+        "remove_name": "remove",
+        "list_name": "list",
+        "error_message": "Only my owner can use this command",
+        "add_user_premium": "I have successfully granted premium to <@{{-users}}>",
+        "remove_user_premium": "I successfully received a premium membership from <@{{-users}}>",
+        "time": { "name": "time" }
+    },
+    "user_info": {
+        "name": "member",
+        "description": "Shows the user's information",
+        "info_name": "info",
+        "user_name": "user",
+        "user_description": "Please enter a user",
+        "rosette": "Badges",
+        "title": "{{-users}}'s information"
+    },
+    "auto": {
+        "name": "auto",
+        "role": { "name": "role", "description": "Allows you to set up the autorole system on your server", "role_name": "role", "role_description": "@role @role @role @role" },
+        "error_text": {
+            "not_role": "Please set the role to be assigned to new members",
+            "not_permission": "I don't have permission to grant one or more of the roles you provided"
+        },
+        "done_text": {
+            "auto_role": "I have successfully installed autorole on the server",
+            "auto_role_close": "Successfully turned off the autorole system"
+        }
+    },
+    "delete_message": {
+        "not_count": "Please enter a number",
+        "not_100_count": "Please enter a number between 1 and 100",
+        "done": "I have successfully removed **{{-count}}** messages from the channel"
+    },
+    "voice": {
+        "name": "voice",
+        "panel_name": "panel",
+        "panel_description": "Allows you to create a sound panel",
+        "not_type": "Please specify a type",
+        "member_done_embed": "I have securely installed sound panel on server",
+        "not_panel": "I think this feature is installed on the server, can you try again",
+        "not_close_panel": "The feature you are trying to use is disabled for now, you can turn it off again",
+        "member_done_embed_close": "Successfully closed member counter",
+        "type": {
+            "description": "Please enter sound panel type"
+        }
+    },
+    "rosette": {
+        "name": "rosette",
+        "rosette": { "name": "rosette" },
+        "add_rosette": "I gave the user the badge you successfully set",
+        "remove_rosette": "Successfully retrieved the user's badge",
+        "have_user": "I guess the user doesn't have such a need"
+    },
+    "settings": {
+        "name": "settings",
+        "description": "Shows the active status of commands",
+        "embed": {
+            "welcome": "Welcome",
+            "vanity_url": "Url Guard",
+            "advertising": "Advertising Block",
+            "ticket": "Ticket",
+            "member_count": "Target Member",
+            "level_system": "Level",
+            "swear_block": "Swear Block",
+            "auto_role": "Auto Role",
+            "voice_panel": "Voice Panel"
+        }
+    },
+    "help": {
+        "name": "help",
+        "description": "How can I help you?",
+        "uptime": {
+            "name": "About",
+            "description": "> **{{-bot_name}}** is actively present on **{{-guild_count}}** Server, serving **{{-client_users}}** User!"
+        },
+        "service": {
+            "name": "Service",
+            "description": "> **{{-bot_name}}** is in active service with **{{-processs}}** Version and V14 Discord.JS Version."
+        },
+        "not_premium": "You need 250 coins to have premium membership",
+        "add_premium": "<@{{-user_id}}> Congratulations, you are now a premium member",
+        "have_premium": "You already have a premium membership",
+        "select_menu": {
+            "all_command": "Systems",
+            "other": "Other Commands"
+        },
+        "command": {
+            "level": "/Level System",
+            "level_d": "> Allows you to set the level system on the server",
+            "welcome": "/Welcome",
+            "welcome_d": "> Allows you to set up the welcome system",
+            "ticket": "/Ticket",
+            "ticket_d": "> Allows you to setup the ticket system",
+            "voice": "/Voice Panel",
+            "voice_d": "> Allows you to install the sound panel",
+            "auto_role": "/Auto Role",
+            "auto_role_d": "> Allows you to install the autorole system",
+            "target_member": "/Target Member",
+            "target_member_d": "> Allows you to set up target member system",
+            "url_guard": "/Url Guard",
+            "url_guard_d": "> Allows you to set up the url protection system",
+            "adversting": "/Adversting Block",
+            "adversting_d": "> Allows you to set up ad blocking system",
+            "prize": "/Daily Reward",
+            "prize_d": "> Get daily reward",
+            "setting": "/Settings",
+            "setting_d": "> Shows the commands you have used",
+            "client": "/Client Stats",
+            "client_d": "> Shows bot's information",
+            "level_role": "/Level Role",
+            "level_role_d": "> Allows you to add a role to the level system",
+            "user_level": "/User Level",
+            "user_level_d": "> Shows user's level",
+            "welcome_pre": "/Welcome(PICTURED)",
+            "welcome_pre_d": "> Allows you to set up the picture welcome system",
+            "greet": "/Greeting",
+            "greet_d": "> Tag and delete new user joining server",
+            "delete": "delete [number]",
+            "delete_d": "> Allows you to delete messages in the channel",
+            "role_add": "/Role Add",
+            "role_add_d": "> Allows you to assign roles to user or users",
+            "role_remove": "/Role Remove",
+            "role_remove_d": "> Allows you to take role from user or users",
+            "twitch": "/Twitch Alert",
+            "twitch_d": "> Allows you to set up the Twitch announcement system",
+            "public_register": "/Community Register",
+            "public_register_d": "> Allows you to set up the community registration system",
+            "reaction_role": "/Reaction Role",
+            "reaction_role_d": "> Allows you to set up the reaction role system",
+            "special_room": "/Special Room",
+            "special_room_d": "> Allows you to set up the private room system",
+            "youtube_alert": "/Youtube Announcement",
+            "youtube_alert_d": "> Allows you to set up the Youtube announcement system",
+            "money": "Money Send",
+            "greet_pre": "Greeting(10 Channels)"
+        },
+        "command_information": {
+            "welcome": {
+                "welcome_hello": "Welcome Message",
+                "welcome_bye": "Bye Message",
+                "welcome_t": "Text",
+                "welcome_e": "Embed",
+                "welcome_p": "Picture"
+            },
+            "vanity": { "channel": "Channel" },
+            "ticket": {
+                "channel": "Category",
+                "mod": "Moderator",
+                "ticket_count": "Number of Tickets"
+            },
+            "member_count": { "target": "Target Members" },
+            "level": {
+                "message": "Level Message",
+                "message_t": "Text",
+                "message_e": "Embed",
+                "channel": "Channel"
+            },
+            "auto_role": {
+                "role": "Role"
+            },
+            "voice": {
+                "total_member": "Total Members",
+                "channel": "Channel",
+                "channels": "Channels"
+            },
+            "twitch": {
+                "channel": "Channel",
+                "tag": "tag",
+                "channel_tag": "Channel Tag"
+            },
+            "public": {
+                "girl": "Role Girl",
+                "man": "Male Role",
+                "u": "Unregistered Role",
+                "y": "Authorized Role"
+            }
+        }
+    },
+    "prize": {
+        "name": "daily",
+        "description": "Allows you to receive daily coin reward",
+        "prize_name": "prize",
+        "not_prize": "You haven't expired yet, please come back in 24 hours",
+        "success": "Congratulations, you won **{{-integer}}** coins"
+    },
+    "greet": {
+        "name": "greeting",
+        "description": "Tag and delete new user who joined the server",
+        "channel": {
+            "name": "channel",
+            "description": "Please select the channel to tag"
+        },
+        "not_channel": "Please enter a channel to tag members",
+        "close_system": "Successfully turned off the greeting system",
+        "open_system": "I set up the greeting system perfectly",
+        "not_10_channel": "You can use greetings on up to 10 channels",
+        "greet.not_5_channel": "You can use greetings on up to 5 channels, you must be a premium member to send greetings to 10 channels"
+    },
+    "wheel": {
+        "name": "wheel",
+        "description": "After you enter the arguments you want, you will randomly choose one of the arguments you entered.",
+        "model_title": "Fortune Wheel",
+        "model_choices": "Options",
+        "model_place": "Write your options separated by commas.",
+        "2_length": "Virgülle ayrılmış iki seçeneği belirtmeniz gerekiyor!",
+        "spin": "Wheel is spinning...",
+        "result": "**Result:**"
+    },
+    "twitch": {
+        "name": "twitch",
+        "description": "Allows you to set up the Twitch announcement system",
+        "alert": { "name": "alert" },
+        "username": { "name": "username", "description": "Please enter your twitch username" },
+        "channel": { "name": "channel", "description": "Please enter the broadcast announcement channel"},
+        "not_channel": "Please enter a channel",
+        "not_user": "Please type your username",
+        "done": "I've successfully installed twitch announcement system on <#{{-channel_id}}>",
+        "close": "Safely closed the Twitch announcement system",
+        "embed": {
+            "game": "Game",
+            "lang": "Language",
+            "date": "Opened Time"
+        }
+    },
+    "public_register": {
+        "name": "community",
+        "description": "Allows you to set up the community registration system",
+        "register": { "name": "register" },
+        "uChannel": { "name": "channel", "description": "Please enter a recording channel" },
+        "m_role": { "name": "man-rol", "description": "Enter the role to be given to male users" },
+        "g_role": { "name": "girl-rol", "description": "Enter the role to be assigned to female users" },
+        "u_role": { "name": "unregister-role", "description": "Enter unregistered role" },
+        "a_role": { "name": "admin-role", "description": "Enter authorized role" },
+        "not_uChannel": "Please select a channel",
+        "not_m_role": "Make sure you select the male role and try again",
+        "not_g_role": "Make sure you select female role and try again",
+        "not_a_role": "Make sure you select the authorized role and try again",
+        "not_u_role": "Make sure to select unregistered role and try again",
+        "done_system": "I have successfully installed the community system on <#{{-channels}}>",
+        "close_system": "Safely closed the community system",
+        "not_a": "Only officials can use this button",
+        "member_control": {
+            "date": "Account Creation Date",
+            "verification": "Security Status",
+            "verification_t": "Secure",
+            "verification_f": "Not Secure",
+            "man_button": "Man",
+            "girl_button": "Girl",
+            "kick_button": "Kick"
+        },
+        "control": {
+            "kick_user": "I kicked <@{{-user}}> from the server"
+        },
+        "modal": {
+            "name": "Name",
+            "age": "Age"
+        },
+        "reply": {
+            "register_done": "I have successfully registered <@{{-user}}> to the server"
+        }
+    },
+    "reaction_role": {
+        "name": "reaction",
+        "description": "Allows you to set up the reaction role system",
+        "role": { "name": "role" },
+        "channel": { "name": "channel", "description": "Select the channel to send the message to" },
+        "choices": { "name": "reaction-type", "descripiton": "Please enter a reaction type" },
+        "roles": { "name": "role", "description": "@role1, @role2" },
+        "text": { "name": "text", "description": "Please type the text that will appear in the embed" },
+        "not_role": "Please enter a role",
+        "not_role_length": "You can enter up to 25 roles",
+        "not_managent": "You cannot use {{-error}} roles",
+        "not_perm": "I am not authorized to grant {{-error_d}} roles",
+        "not_channel": "Please enter a channel",
+        "done": "I have successfully set up the reaction role system",
+        "add_not_s": "Successfully assigned {{-add_role}}",
+        "add_s": "Successfully added {{-add_role}} roles",
+        "remove_not_s": "Successfully got the role {{-remove_role}}",
+        "remove_s": "Successfully retrieved {{-remove_role}} roles",
+        "button_remove": "Successfully got the role <@&{{-role_id}}>",
+        "button_add" : "Successfully added the role <@&{{-role_id}}>"
+    },
+    "special_room": {
+        "name": "special",
+        "description": "Allows you to set up the private room system",
+        "room": { "name": "room" },
+        "channel": { "name": "channel", "description": "Please select a voice channel" },
+        "not_channel": "Please enter a channel",
+        "done": "I have successfully set up the private room system on <#{{-channel_id}}>",
+        "close": "Safely closed the private room system"
+    },
+    "youtube_alert": {
+        "name": "youtube",
+        "description": "Allows you to set up the Youtube announcement system",
+        "alert": { "name": "alert" },
+        "username": { "name": "channel-id", "description": "Please enter youtube channel id here" },
+        "channel": { "name": "channel", "description": "Please enter youtube announcement channel" },
+        "role": { "name": "tag", "description": "Enter the role to tag" },
+        "not_user": "Please enter a channel id",
+        "done": "I have successfully installed youtube announcement system on <#{{-channel_id}}>",
+        "close": "Safely closed the youtube announcement system",
+        "not_role": "Please enter the role to be tagged"
+    },
+    "money": {
+        "name": "money",
+        "description": "Allows you to transfer funds",
+        "send": { "name": "send", "description": "Allows you to send cuckoo coins to anyone you want" },
+        "user": { "name": "user", "description": "Please select the user to whom the cuckoo coin will be sent" },
+        "money": { "name": "coin-amount", "description": "Please choose how many cuckoo coins to send to the specified user" },
+        "dont_money": "Unfortunately, money transfer failed. You need **{{-money}}** coins",
+        "done": "I have successfully sent money, your current balance is **{{-old_money}}**"
+    },
+    "user": {
+        "ban": {
+            "name": "ban",
+            "description": "Allows you to ban the user you specify from the server",
+            "user": { "name": "user", "description": "Select the user to be banned from the server" },
+            "reason": { "name": "reason", "description": "Enter the reason the user was banned" },
+            "info": { "name": "info", "description": "Shows the user's ban" },
+            "info_user": { "name": "user", "description": "Select the user to show ban information" },
+            "users": { "name": "user" },
+            "not_my": "<@{{user_id}}> Sorry you can't ban yourself",
+            "not_client": "<@{{user_id}}> Sorry I wasn't made to ban myself",
+            "hight_positon": "<@{{user_id}}> You need to promote my role or I can't ban anyone",
+            "done": "I have successfully banned <@{{user_you}}>",
+            "not_user": "<@{{user_id}}> The user you selected does not have a ban",
+            "user_info": "<@{{user_you}}>'s ban reason \n ```{{reason}}```"
+        },
+        "unban": {
+            "name": "remove",
+            "description": "Removes the user's ban from the server",
+            "unban": { "name": "ban" },
+            "user": { "name": "user", "description": "Which user would you like me to unban" },
+            "done_unban": "I unbanned <@{{user_}}>",
+            "not_my": "<@{{user_}}> Sorry you can't unban yourself",
+            "not_client": "<@{{user_}}> Sorry I wasn't made to unban myself"
+        }
+    }
+}

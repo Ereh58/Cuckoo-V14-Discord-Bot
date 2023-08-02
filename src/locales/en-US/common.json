@@ -1,0 +1,9 @@
+{
+    "unexpected_error": "An unexpected error occurred. Please try again later.",
+    "missing_permissions": "I need to have the following permissions to run this command: ``{{-permissions}}`",
+    "cooldown": "You can use this command again in `{{-cooldown}}` seconds.",
+    "user_permissions": "You must have `{{-perm}}` privilege to use this command",
+    "welcome_picture_warning": "There was an error with the image in the welcome system, please choose a png format image",
+    "not_premium": "You must be a premium member to use this command",
+    "not_user": "Only the person using the command can use this button"
+}

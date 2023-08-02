@@ -1,0 +1,566 @@
+{
+    "ping": {
+        "name": "gecikme",
+        "description": "Botun ve Discord WS'inin gecikmesini gösterir.",
+        "embed": {
+            "bot_ping": "Bot Gecikmesi",
+            "discord_ping": "Discord Gecikmesi"
+        }
+    },
+    "vanity_url": {
+        "name": "url",
+        "description": "URL değiştiği zaman belirlediğiniz kanala bir bildirim gönderir",
+        "status": {
+            "name": "durum",
+            "description": "Lütfen durumun ne olucağını seçin"
+        },
+        "control_channel": {
+            "name": "kontrol-kanalı",
+            "description": "URL bildirim kanalı ayarlayın"
+        },
+        "sub_command": "koruma",
+        "open_embed": "URL bildirim sistemini <#{{channel}}> adlı kanala başarıyla kurdum",
+        "close_embed": "URL bildirim sistemini başarılı bir şekilde kapattım",
+        "change_url": "Özel URL Değiştirildi",
+        "old_vanity_url": "Eski Özel URL",
+        "new_vanity_url": "Yeni Özel URL",
+        "staff_vanity_url": "Yetkili",
+        "not_channel": "Lütfen bir kanal girin"
+    },
+    "report": {
+        "name": "hata",
+        "description": "Geliştiriciye aldığın hatayı göndermeni sağlar",
+        "image": {
+            "name": "resim",
+            "description": "Lütfen hatayla alakalı bir resim girin"
+        },
+        "report_text": {
+            "name": "hatayı-anlatırmısın",
+            "description": "Ne yaparken bu hatayı aldınız?"
+        },
+        "send_name": "gönder",
+        "send_embed": "Hatayı başarıyla geliştiriciye ilettim"
+    },
+    "welcome": {
+        "name": "karşılama",
+        "description": "Karşılama mesajı oluşturmanızı sağlar",
+        "channel": {
+            "name": "kanal",
+            "description": "Lütfen bir kanal belirtin"
+        },
+        "status": {
+            "name": "durum",
+            "description": "Lütfen durumun ne olucağını seçin"
+        },
+        "type": {
+            "name": "tip",
+            "description": "Lütfen karşılama tipini seçin"
+        },
+        "picture": {
+            "name": "resim",
+            "description": "Lütfen galerinizden bir resim seçin"
+        },
+        "bye_text": {
+            "name": "görüşürüz-mesajı",
+            "description": "{user} => Kullanıcı, {memberCount} => Sunucudaki üye sayısı, {bottom} => boşluk bırakma"
+        },
+        "welcome_text": {
+            "name": "hoşgeldin-mesajı",
+            "description": "{user} => Kullanıcı, {memberCount} => Sunucudaki üye sayısı, {bottom} => boşluk bırakma"
+        },
+        "create_welcome_message": "Karşılama sistemini <#{{-channels}}> kanalına kurdum",
+        "not_picture": "Lütfen bir resim seçin",
+        "close_welcome": "Karşılama sistemini başarılı bir şekilde kapattım",
+        "not_type": "Lütfen bir tip belirtin",
+        "not_channel": "Lütfen bir kanal girin",
+        "not_welcome_message": "Lütfen bir hoşgeldin mesajı girin",
+        "not_bye_message": "Lütfen bir görüşürüz mesajı girin",
+        "not_png": "Lütfen sonu .jpg ile biten bir dosya girin"
+    },
+    "advertising_block": {
+        "name": "reklam",
+        "description": "Sunucudaki kullanıcıların reklam yapmasını engeller",
+        "status": {
+            "name": "durum",
+            "description": "Lütfen durumun ne olucağını seçin"
+        },
+        "block_name": "engel",
+        "open_embed_message": "Reklam engel sistemini sunucuya başarılı bir şekilde kurdum",
+        "close_embed_message": "Reklam engel sistemini sunucudan başarıyla kaldırdım",
+        "block_message": "{user} bu sunucuda reklam yapmamalısın"
+    },
+    "client_information": {
+        "name": "bot",
+        "description": "Botun bilgilerini gösterir",
+        "information_name": "bilgi",
+        "embeds": {
+            "bot_owner": "Geliştirici",
+            "bot_owner_value": "{{-owner}}",
+            "bot_uptime": "Çalışma Süresi",
+            "bot_uptime_value": "{{-uptime}}",
+            "bot_memory_usage": "Bellek Kullanımı",
+            "bot_memory_usage_value": "{{-memory}}",
+            "bot_guild_count": "Sunucu Sayısı",
+            "bot_guild_count_value": "{{-guild_count}}",
+            "bot_member_count": "Kullanıcı Sayısı",
+            "bot_member_count_value": "{{-member_count}}",
+            "bot_shard_count": "Shard Sayısı",
+            "bot_shard_count_value": "{{-shard}}",
+            "bot_command_count": "Komut Sayısı",
+            "bot_command_count_value": "{{-command}}",
+            "bot_create_date": "Hizmete Giriş Tarihi",
+            "bot_create_date_value": "{{-created}}",
+            "bot_version": "Bot Sürümü",
+            "bot_version_value": "{{-bot_version}}"
+        }
+    },
+    "ticket": {
+        "name": "bilet",
+        "description": "Kullanıcıların destek talebi oluşturmasını sağlar",
+        "status": {
+            "name": "durum",
+            "description": "Lütfen durumun ne olucağını seçin"
+        },
+        "channel": {
+            "name": "kanal",
+            "description": "Lütfen bir kanal belirtin"
+        },
+        "category": {
+            "name": "kategori",
+            "description": "Bilet kanalının açılıcağı kategoriyi belirtin"
+        },
+        "ticket_count": {
+            "name": "bilet-sayısı",
+            "description": "Maksimum kaç tane bilet kanalınınn açılıcağını belirtin"
+        },
+        "ticket_moderator": {
+            "name": "yetkili",
+            "description": "Bilet yetkilisi girin"
+        },
+        "descriptions": {
+            "name": "açıklama",
+            "description": "Bilet açıklamasını girin"
+        },
+        "create_name": "oluştur",
+        "not_moderator": "Lütfen bir moderator girin",
+        "not_channel": "Lütfen bir kanal girin",
+        "not_ticket_count": "Lütfen maksimum açılabilicek ticket sayısını girin",
+        "not_category": "Lütfen bir kategori girin",
+        "done_embed": "Bilet mesajını <#{{-channels}}> kanalına gönderdim",
+        "close_embed": "Bilet sistemini başarılı bir şekilde sunucudan kaldırdım",
+        "not_description": "Lütfen bir açıklama girin",
+        "modal_place": "Bazı sorunlarım var",
+        "modal": "Sorununuz Nedir?",
+        "ticket_name": "_bilet",
+        "ticket_description": "Kullanıcının Sorunu",
+        "ticket_create_embed": "Senin için bir destek talebi oluşturdum. Oluşturduğun destek talebine gitmek için buraya tıklayabilirsin **{{-channels}}**",
+        "max_ticket_count": "Moderatörler şuan başka kişilerin destek taleplerine bakıyor lütfen daha sonra tekrar deneyin",
+        "channel_delete_message": "Kanal siliniyor...",
+        "close_question": "Destek talebini kapatmak istediğine eminmisin?",
+        "not_permissions": "Bunu kullanmak için ticket yetkilisi olmalısın",
+        "have_ticket_error_message": "Şuan aktif bir destek talebin var tekrar açamassın",
+        "ticket_opened_user": "👥 **Bileti Oluşturan**",
+        "ticket_opened_time": "⏰ **Bilet Açılış Tarihi**",
+        "ticket_opened_moderator": "🎫 **Bilet Yetkilileri**",
+        "user_model": "Kullanıcı Kimliği Girin",
+        "not_user": "Lütfen bir kullanıcı girin",
+        "done_add_user": "Kullanıcıyı başarıyla kanala ekledim"
+    },
+    "welcome_member_count": {
+        "name": "hedef",
+        "description": "Üye sayacını kurmanızı sağlar",
+        "status": {
+            "name": "durum",
+            "description": "Lütfen durumun ne olucağını seçin"
+        },
+        "member": {
+            "name": "üye"
+        },
+        "target": {
+            "name": "hedef-üye",
+            "description": "Hedef üye sayısı girin"
+        },
+        "not_welcome_message": "Lütfen karşılama sistemini aktif ettikten sonra bu komutu kullanın",
+        "not_number_options": "Lütfen hedef üye sayısını girin",
+        "open_system_message": "Sunucuya güvenli bir şekilde hedef üye sistemini kurdum",
+        "close_system_message": "Başarılı bir şekilde sunucudan hedef üye sistemini kaldırdım",
+        "show_text": "Hedef: {{-target_member}} • 👥 Üye Sayısı: {{-member_count}} • Kalan: {{-target}}",
+        "not_welcome": "Bu özellik sadece embed karşılama sisteminde kullanılabilir"
+    },
+    "level_system": {
+        "name": "level",
+        "description": "Sunucuya level sistemini kurmanızı sağlar",
+        "text": { "name": "level-mesajı", "description": "{user} => kullanıcı, {level} => Kullanıcının leveli" },
+        "picture": { "name": "resim", "description": "Resim girin" },
+        "channel": { "name": "kanal", "description": "Kanal girin" },
+        "type": {
+            "name": "tip",
+            "description": "Lütfen level mesaj tipini seçin"
+        },
+        "role_name": "rol",
+        "role_description": "Level sistemine rol girmenizi sağlar",
+        "role_level": "Seviye?",
+        "system_name": "sistemi",
+        "role_role": "Rol Id?",
+        "not_text": "Lütfen level atlama mesajı girin",
+        "not_type": "Lütfen bir tip belirtin",
+        "not_channel": "Lütfen bir kanal girin",
+        "not_text_length": "Lütfen 200 karakterlik bir level atlama mesajı girin",
+        "open_embed_message": "Level sistemini Başarıyla sunucuya kurdum",
+        "not_picture": "Lütfen bir resim seçin",
+        "close_embed_message": "Level sistemini sunucudan kaldırdım",
+        "not_1000_length": "Lütfen 1000 levelin üstünde rol verme işlemi uygulamayın",
+        "not_role": "Lütfen rolü düzgün bir şekilde girip tekrar deneyin",
+        "done_role": "Belirlediğin rolü başarıyla ekledim"
+    },
+    "level_user": {
+        "name": "kullanıcı",
+        "description": "Kullanıcının levelini gösterir",
+        "user": { "name": "kullanıcı", "description": "Lütfen bir kullanıcı girin" },
+        "user_name": "leveli",
+        "not_user": "Kullanıcının leveli yok",
+        "level_level": "Level",
+        "level_xp": "Xp"
+    },
+    "premium": {
+        "name": "ayrıcalık",
+        "description": "Sadece botun sahibi kullanabilir",
+        "user": {
+            "name": "kullanıcı"
+        },
+        "add_name": "ekle",
+        "remove_name": "al",
+        "list_name": "liste",
+        "error_message": "Bu komutu sadece sahibim kullanabilir",
+        "add_user_premium": "<@{{-users}}> Adlı kullanıcıya başarıyla premium verdim",
+        "remove_user_premium": "<@{{-users}}> Adlı kullanıcının başarıyla premium üyeliğini aldım",
+        "time": { "name": "zaman" }
+    },
+    "user_info": {
+        "name": "kullanıcı",
+        "description": "Kullanıcının bilgilerini gösterir",
+        "info_name": "bilgi",
+        "user_name": "kullanıcı",
+        "user_description": "Lütfen bir kullanıcı girin",
+        "rosette": "Rozetleri",
+        "title": "{{-users}} Adlı kullanıcının bilgileri"
+    },
+    "auto": {
+        "name": "oto",
+        "role": { "name": "rol", "description": "Sunucunuza oto rol sistemini kurmanızı sağlar", "role_name": "rol", "role_description": "@rol @rol @rol @rol" },
+        "error_text": {
+            "not_role": "Lütfen yeni üyelere verilicek rolü ayarlayın",
+            "not_permission": "Sağladığınız rollerden birini veya daha fazlasını verme iznim yok"
+        },
+        "done_text": {
+            "auto_role": "Sunucuya başarıyla oto rol sistemini kurdum",
+            "auto_role_close": "Başarıyla oto rol sistemini kapadım"
+        }
+    },
+    "delete_message": {
+        "not_count": "Lütfen bir sayı girin",
+        "not_100_count": "Lütfen 1 ila 100 arasında bir sayı girin",
+        "done": "Başarıyla **{{-count}}** tane mesajı kanaldan kaldırdım"
+    },
+    "voice": {
+        "name": "ses",
+        "panel_name": "paneli",
+        "panel_description": "Ses paneli oluşturmanızı sağlar",
+        "not_type": "Lütfen bir tip belirtin",
+        "member_done_embed": "Sunucuya güvenli bir şekilde ses panelini kurdum",
+        "not_panel": "Galiba bu özellik sunucuda kurulu kapatık tekrar denermisin",
+        "not_close_panel": "Kullanmaya çalıştığın özellik şuan için devre dışı açtıktan sonra tekrar kapatabilirsin",
+        "member_done_embed_close": "Başarıyla üye sayacını kapattım",
+        "type": {
+            "description": "Lütfen ses paneli tipi girin"
+        }
+    },
+    "rosette": {
+        "name": "rozet",
+        "rosette": { "name": "rozet" },
+        "add_rosette": "Kullanıcıya başarıyla belirlediğin rozeti verdim",
+        "remove_rosette": "Kullanıcının rozetini başarılı bir şekilde geri aldım",
+        "have_user": "Galiba kullanıcının böyle bir ihtiyacı yok"
+    },
+    "settings": {
+        "name": "ayarlar",
+        "description": "Komutların aktiflik durumunu gösterir",
+        "embed": {
+            "welcome": "Karşılama",
+            "vanity_url": "Url Koruma",
+            "advertising": "Reklam Engel",
+            "ticket": "Bilet",
+            "member_count": "Hedef Üye",
+            "level_system": "Level",
+            "swear_block": "Küfür Engel",
+            "auto_role": "Oto Rol",
+            "voice_panel": "Ses Paneli"
+        }
+    },
+    "help": {
+        "name": "yardım",
+        "description": "Sana nasıl yardımcı olabilirim?",
+        "uptime": {
+            "name": "Hakkında",
+            "description": "> **{{-bot_name}}** aktif olarak **{{-guild_count}}** Sunucuda bulunmakta, ve **{{-client_users}}** Kullanıcıya hizmet vermekte!"
+        },
+        "service": {
+            "name": "Hizmet",
+            "description": "> **{{-bot_name}} {{-processs}}** Sürümü ve **V14 Discord.JS** Sürümü ile aktif hizmet veriyor."
+        },
+        "not_premium": "Premium üyeliğine sahip olmak için 250 coine ihtiyacın var",
+        "add_premium": "<@{{-user_id}}> Tebrikler artık premium üyesisin",
+        "have_premium": "Zaten bir premium üyeliğe sahipsin",
+        "select_menu": {
+            "all_command": "Sistemler",
+            "other": "Diğer Komutlar"
+        },
+        "command": {
+            "level": "/Level Sistemi",
+            "level_d": "> Sunucuya level sistemini kurmanızı sağlar",
+            "welcome": "/Karşılama",
+            "welcome_d": "> Karşılama sistemini kurmanızı sağlar",
+            "ticket": "/Bilet",
+            "ticket_d": "> Bilet sistemini kurmanızı sağlar",
+            "voice": "/Ses Paneli",
+            "voice_d": "> Ses panelini kurmanızı sağlar",
+            "auto_role": "/Oto Rol",
+            "auto_role_d": "> Çoklu oto rol sistemini kurmanızı sağlar",
+            "target_member": "/Hedef Üye",
+            "target_member_d": "> Hedef üye sistemini kurmanızı sağlar",
+            "url_guard": "/Url Koruma",
+            "url_guard_d": "> Url koruma sistemini kurmanızı sağlar",
+            "adversting": "/Reklam Engel",
+            "adversting_d": "> Reklam engel sistemini kurmanızı sağlar",
+            "prize": "/Günlük Ödül",
+            "prize_d": "> Günlük ödül almanızı sağlar",
+            "setting": "/Ayarlar",
+            "setting_d": "> Kullandığınız komutları gösterir",
+            "client": "/Bot Bilgi",
+            "client_d": "> Botun bilgilerini gösterir",
+            "level_role": "/Level Rol",
+            "level_role_d": "> Level sistemine rol eklemenizi sağlar",
+            "user_level": "/Kullanıcı Level",
+            "user_level_d": "> Kullanıcının levelini gösterir",
+            "welcome_pre": "/Karşılama(Resimli)",
+            "welcome_pre_d": "> Resimli karşılama sistemini kurmanızı sağlar",
+            "greet": "/Selamlaşmak",
+            "greet_d": "> Sunucuya katılan yeni kullanıcıyı etiketleyip siler",
+            "delete": "sil (sayı)",
+            "delete_d": "> Kanaldaki mesajları silmenizi sağlar",
+            "twitch": "/Twitch Duyuru",
+            "twitch_d": "> Twitch duyuru sistemini kurmanızı sağlar",
+            "public_register": "/Topluluk Kayıt",
+            "public_register_d": "> Topluluk kayıt sistemini kurmanızı sağlar",
+            "reaction_role": "/Reaksiyon Rol",
+            "reaction_role_d": "> Reaksiyon rol sistemini kurmanızı sağlar",
+            "special_room": "/Özel Oda",
+            "special_room_d": "> Özel oda sistemini kurmanızı sağlar",
+            "youtube_alert": "/Youtube Duyuru",
+            "youtube_alert_d": "> Youtube duyuru sistemini kurmanızı sağlar",
+            "money": "Para Gönder",
+            "greet_pre": "Selamlaşma(10 Kanal)"
+        },
+        "command_information": {
+            "welcome": {
+                "welcome_hello": "Hoşgeldin Mesajı",
+                "welcome_bye": "Görüşürüz Mesajı",
+                "welcome_t": "Metin",
+                "welcome_e": "Embed",
+                "welcome_p": "Resim"
+            },
+            "vanity": { "channel": "Kanal" },
+            "ticket": {
+                "channel": "Kategori",
+                "mod": "Moderatör",
+                "ticket_count": "Bilet Sayısı"
+            },
+            "member_count": { "target": "Hedef Üye Sayısı" },
+            "level": {
+                "message": "Level Mesajı",
+                "message_t": "Metin",
+                "message_e": "Embed",
+                "channel": "Kanal"
+            },
+            "auto_role": {
+                "role": "Roller"
+            },
+            "voice": {
+                "total_member": "Toplam Üye",
+                "channel": "Kanal",
+                "channels": "Kanallar"
+            },
+            "twitch": {
+                "channel": "Kanal",
+                "tag": "Etiket",
+                "channel_tag": "Kanal Etiketi"
+            },
+            "public": {
+                "girl": "Kız Rol",
+                "man": "Erkek Rol",
+                "u": "Kayıtsız Rol",
+                "y": "Yetkili Rol"
+            }
+        }
+    },
+    "prize": {
+        "name": "günlük",
+        "description": "Günlük coin ödülünü almanı sağlar",
+        "prize_name": "ödül",
+        "not_prize": "Daha süren dolmadı lütfen 24 saat sonra tekrar gel",
+        "success": "Tebrikler **{{-integer}}** coin kazandın"
+    },
+    "greet": {
+        "name": "selamlaşmak",
+        "description": "Sunucuya katılan yeni kullanıcıyı etiketleyip siler",
+        "channel": {
+            "name": "kanal",
+            "description": "Lütfen etiketlenicek kanalı seçin"
+        },
+        "not_channel": "Lütfen üyelerin etiketleniceği bir kanal girin",
+        "close_system": "Başarıyla selamlaşma sistemini kapadım",
+        "open_system": "Mükemmel bir şekilde selamlaşma sistemini kurdum",
+        "not_10_channel": "En fazla 10 tane kanalda selamlaşma kullanabilirsin",
+        "greet.not_5_channel": "En fazla 5 tane kanalda selamlaşma kullanabilirsin 10 tane kanala göndermek için premium üye olmalısın"
+    },
+    "wheel": {
+        "name": "çarkıfelek",
+        "description": "İstediğiniz argümanları girdikten sonra, girdiğiniz argümanlardan birini rastgele seçeceksiniz.",
+        "model_title": "Çarkıfelek",
+        "model_choices": "Seçenekler",
+        "model_place": "Seçeneklerinizi virgülle ayırarak yazınız.",
+        "2_length": "Virgülle ayrılmış iki seçenek belirtmeniz gerekiyor!",
+        "spin": "Çark Dönüyor...",
+        "result": "**Sonuç:**"
+    },
+    "twitch": {
+        "name": "twitch",
+        "description": "Twitch duyuru sistemini kurmanızı sağlar",
+        "alert": { "name": "duyuru" },
+        "username": { "name": "kullanıcı-adı", "description": "Lütfen twitch kullanıcı adınızı girin" },
+        "channel": { "name": "kanal", "description": "Lütfen yayın duyuru kanalını girin"},
+        "not_channel": "Lütfen bir kanal girin",
+        "not_user": "Lütfen kullanıcı isminizi yazın",
+        "done": "Başarıyla <#{{-channel_id}}> kanalına twitch duyuru sistemini kurdum",
+        "close": "Twitch duyuru sistemini güvenli bir şekilde kapadım",
+        "embed": {
+            "game": "Oyun",
+            "lang": "Dil",
+            "date": "Zaman"
+        }
+    },
+    "public_register": {
+        "name": "topluluk",
+        "description": "Topluluk kayıt sistemini kurmanızı sağlar",
+        "register": { "name": "kayıt" },
+        "uChannel": { "name": "kanal", "description": "Lütfen bir kayıt kanalını girin" },
+        "m_role": { "name": "erkek-rol", "description": "Erkek kullanıcılara verilicek rolü girin" },
+        "g_role": { "name": "kız-rol", "description": "Kadın kullanıcılara verilicek rolü girin" },
+        "u_role": { "name": "kayıtsız-rol", "description": "Kayıtsız rolü girin" },
+        "a_role": { "name": "yetkili-rol", "description": "Yetkili rolü girin" },
+        "not_uChannel": "Lütfen bir kanal seçin",
+        "not_m_role": "Erkek rolünü seçtiğinizden emin olun ve tekrar deneyin",
+        "not_g_role": "Kadın rolünü seçtiğinizden emin olun ve tekrar deneyin",
+        "not_a_role": "Yetkili rolünü seçtiğinizden emin olun ve tekrar deneyin",
+        "not_u_role": "Kayıtsız rolünü seçtiğinizden emin olun ve tekrar deneyin",
+        "done_system": "Başarıyla topluluk sistemini <#{{-channels}}> adlı kanala kurdum",
+        "close_system": "Güvenli bir şekilde topluluk sistemini kapadım",
+        "not_a": "Bu butonu sadece yetkililer kullanabilir",
+        "member_control": {
+            "date": "Hesap Oluşturma Tarihi",
+            "verification": "Güvenlik Durumu",
+            "verification_t": "Güvenli",
+            "verification_f": "Güvenli Değil",
+            "man_button": "Erkek",
+            "girl_button": "Kız",
+            "kick_button": "At"
+        },
+        "control": {
+            "kick_user": "<@{{-user}}> Adlı kullanıcıyı sunucudan attım"
+        },
+        "modal": {
+            "name": "İsim",
+            "age": "Yaş"
+        },
+        "reply": {
+            "register_done": "<@{{-user}}> Adlı kullanıcıyı başarıyla sunucuya kayıt ettim"
+        }
+    },
+    "reaction_role": {
+        "name": "reaksiyon",
+        "description": "Reaksiyon rol sistemini kurmanızı sağlar",
+        "role": { "name": "rol" },
+        "channel": { "name": "kanal", "description": "Mesajın gönderiliceği kanalı seçin" },
+        "choices": { "name": "reaksiyon-tipi", "descripiton": "Lütfen bir reaksiyon tipi girin" },
+        "roles": { "name": "rol", "description": "@rol1, @rol2" },
+        "text": { "name": "metin", "description": "Lütfen embed'de gözükücek metni yazın" },
+        "not_role": "Lütfen bir rol girin",
+        "not_role_length": "En fazla 25 adet rol girebilirsiniz",
+        "not_managent": "{{-error}} rollerini kullanamassın",
+        "not_perm": "{{-error_d}} rollerini vermeye yetkim yok",
+        "not_channel": "Lütfen bir kanal girin",
+        "done": "Reaksiyon rol sistemini başarıyla kurdum",
+        "add_not_s": "Başarıyla {{-add_role}} rolünü verdim",
+        "add_s": "Başarıyla {{-add_role}} rollerini verdim",
+        "remove_not_s": "Başarıyla {{-remove_role}} rolünü aldım",
+        "remove_s": "Başarıyla {{-remove_role}} rollerini aldım",
+        "button_remove": "Başarıyla <@&{{-role_id}}> rolünü aldım",
+        "button_add": "Başarıyla <@&{{-role_id}}> rolünü verdim"
+    },
+    "special_room": {
+        "name": "özel",
+        "description": "Özel oda sistemini kurmanızı sağlar",
+        "room": { "name": "oda" },
+        "channel": { "name": "kanal", "description": "Lütfen bir kanal girin" },
+        "not_channel": "Lütfen bir kanal girin",
+        "done": "Başarıyla özel oda sistemini <#{{-channel_id}}> kanalına kurdum",
+        "close": "Güvenli bir şekilde özel oda sistemini kapadım"
+    },
+    "youtube_alert": {
+        "name": "youtube",
+        "description": "Youtube duyuru sistemini kurmanızı sağlar",
+        "alert": { "name": "duyuru" },
+        "username": { "name": "kanal-id", "description": "Lütfen youtube kanal id'sini buraya girin" },
+        "channel": { "name": "kanal", "description": "Lütfen youtube duyuru kanalı girin" },
+        "role": { "name": "etiket", "description": "Etiketlenicek rolü girin" },
+        "not_user": "Lütfen bir kanal id'si girin",
+        "done": "Başarıyla youtube duyuru sistemini <#{{-channel_id}}> kanalına kurdum",
+        "close": "Güvenli bir şekilde youtube duyuru sistemini kapadım",
+        "not_role": "Lütfen etiketlenicek rolü girin"
+    },
+    "money": {
+        "name": "para",
+        "description": "Para transfer etmenizi sağlar",
+        "send": { "name": "gönder", "description": "İstediğiniz bir kişiye cuckoo coin göndermenizi sağlar" },
+        "user": { "name": "kullanıcı", "description": "Lütfen cuckoo coinin gönderiliceği kullanıcıyı seçin" },
+        "money": { "name": "coin-miktarı", "description": "Lütfen belirttiğiniz kullanıcıya ne kadar cuckoo coin göndericeğinizi seçin" },
+        "dont_money": "Malesef para gönderme işlemi gerçekleşemedi **{{-money}}** kadar coine ihtiyacın var",
+        "done": "Başarıyla parayı gönderdim şuanki güncel bakiyen **{{-old_money}}**"
+    },
+    "user": {
+        "ban": {
+            "name": "yasakla",
+            "description": "Belirttiğiniz kullanıcıyı sunucudan yasaklamayı sağlar",
+            "user": { "name": "kullanıcı", "description": "Sunucudan yasaklanıcak kullanıcıyı seçin" },
+            "reason": { "name": "sebep", "description": "Kullanıcının yasaklanma sebebini girin" },
+            "info": { "name": "bilgi", "description": "Kullanıcının banlanma bilgisini gösterir" },
+            "info_user": { "name": "kullanıcı", "description": "Ban bilgisinin gösteriliceği kullanıcıyı seçin" },
+            "users": { "name": "kullanıcı" },
+            "not_my": "<@{{user_id}}> Malesef kendini banlayamassın",
+            "not_client": "<@{{user_id}}> Üzgünüm kendimi banlamak için yapılmadım",
+            "hight_positon": "<@{{user_id}}> Rolümü yükseltmen gerekli yoksa kimseye banlayamam",
+            "done": "<@{{user_you}}> adlı kullanıcıyı başarıyla banladım",
+            "not_user": "<@{{user_id}}> Seçtiğin kullanıcının bir ban bilgisi bulunmuyor",
+            "user_info": "<@{{user_you}}>'nun banlanma nedeni \n ```{{reason}}```"
+        },
+        "unban": {
+            "name": "yasak",
+            "description": "Kullanıcının sunucudaki yasağını kaldırır",
+            "unban": { "name": "kaldır" },
+            "user": { "name": "kullanıcı", "description": "Hangi kullanıcının banını kaldırmamı isterseniz" },
+            "done_unban": "<@{{user_}}> adlı kullanıcının yasağını kaldırdım",
+            "not_my": "<@{{user_}}> Malesef kendinin yasağını açamassın",
+            "not_client": "<@{{user_}}> Üzgünüm kendimin yasağını kaldırmak için yapılmadım"
+        }
+    }
+}

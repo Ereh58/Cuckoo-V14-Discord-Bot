@@ -1,0 +1,9 @@
+{
+    "unexpected_error": "Beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.",
+    "missing_permissions": "Bu komutu kullanabilmek için bana `{{-permissions}}` yetkilerine vermelisin!",
+    "cooldown": "Bu komutu tekrar kullanabilmek için `{{-cooldown}}` saniye beklemelisin!",
+    "user_permissions": "Bu komutu kullanabilmek için `{{-perm}}` yetkisine sahip olmalısın",
+    "welcome_picture_warning": "Karşılama sistemindeki resimde bir hata oluştu lütfen png formatında bir resim seçin",
+    "not_premium": "Bu komutu kullanmak için premium üye olmalısın",
+    "not_user": "Bu butonu sadece komutu kullanan kişi kullanabilir"
+}
