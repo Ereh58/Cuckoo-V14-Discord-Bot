@@ -85,7 +85,7 @@ export const pActive = async (member) => {
 
         const text = guild.welcome.bye_message.replace("{user}", member.user.username).replace("{guild}", member.guild.name).replace("{memberCount}", member.guild.memberCount)
         
-        const img_path = guild.welcome.picture ? guild.welcome.picture : "https://cdn.discordapp.com/attachments/1113899859259433120/1117434206579073054/image0.jpg"
+        const img_path = guild.welcome.picture.endsWith(".jpg") ? guild.welcome.picture : "https://cdn.discordapp.com/attachments/1113899859259433120/1117434206579073054/image0.jpg"
     
         const canvas = Canvas.createCanvas(566, 283);
         const ctx = canvas.getContext('2d');
